@@ -32,7 +32,7 @@ resource "aws_instance" "this" {
 
   lifecycle {
     ignore_changes = [
-      var.ignore_changes
+      user_data
     ]
   }
   dynamic "capacity_reservation_specification" {

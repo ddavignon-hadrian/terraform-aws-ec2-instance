@@ -298,9 +298,3 @@ variable "spot_valid_from" {
   type        = string
   default     = null
 }
-
-variable "ignore_changes" {
-  description = "ignore changes in resource"
-  type = list(string)
-  default = []
-}
